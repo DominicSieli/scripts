@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Prompt user for source directory path
 read -p "Enter the source directory path: " source_dir
