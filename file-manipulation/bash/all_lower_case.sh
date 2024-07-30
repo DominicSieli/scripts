@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-# Loop through all files in the current directory
 for file in *; do
 	# Check if the file exists and is not already lowercase
 	if [ -f "$file" ] && [ "$file" != "${file,,}" ]; then
