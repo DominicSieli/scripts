@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-TOUCHPAD_ID=10
+TOUCHPAD_ID=$(xinput list | grep -i touchpad | grep -o 'id=[0-9]*' | cut -d'=' -f2)
 
 if ! xinput list | grep -q "id=$TOUCHPAD_ID"; then
 	echo "Touchpad not found."
