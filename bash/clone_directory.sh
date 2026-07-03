@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 read -p "Source Directory: " source
 
 if [ ! -d "$source" ]; then

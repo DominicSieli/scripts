@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 read -p "tty or gui? " target
 
 if [ ${target} = 'gui' ]; then

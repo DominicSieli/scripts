@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
-read -rp "file type: " ext
+set -euo pipefail
+
+read -rp "extension: " ext
 read -rp "directory: " dir
 
-mkdir -p "$dir" &&
+mkdir -p "$dir"
+
 find . -type f -iname "*.$ext" -exec mv -n -t "$dir" {} +
+
+find . -depth -type d -empty -delete

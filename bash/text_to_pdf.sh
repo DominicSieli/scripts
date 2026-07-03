@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 read -p "Source File: " source_file
 read -p "Output File Name: " output_file
 

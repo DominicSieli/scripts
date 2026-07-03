@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
 read -p "Drive: " drive
 read -p "Password: " password
 
